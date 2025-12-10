@@ -1,0 +1,10 @@
+{
+  "repo_name": "college-enrollment",
+  "example_type": "secure",
+  "cwe_id": "N/A",
+  "language": "Python",
+  "framework": "Django",
+  "real_world_domain": "Education/University",
+  "severity": "N/A",
+  "attack_vector": "N/A"
+}

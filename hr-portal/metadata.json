@@ -1,0 +1,10 @@
+{
+  "repo_name": "hr-portal",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-639",
+  "language": "Java",
+  "framework": "Spring Boot",
+  "real_world_domain": "HR Management",
+  "severity": "High",
+  "attack_vector": "API/IDOR"
+}

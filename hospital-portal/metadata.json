@@ -1,0 +1,10 @@
+{
+  "repo_name": "hospital-portal",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-200",
+  "language": "JavaScript",
+  "framework": "Express",
+  "real_world_domain": "Healthcare/Hospital portal",
+  "severity": "Critical",
+  "attack_vector": "API/Sensitive Data Exposure"
+}

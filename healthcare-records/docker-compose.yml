@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - JWT_SECRET=demo-secret-key-not-for-production
+      - NODE_ENV=production
+    volumes:
+      - app_data:/app/data
+
+volumes:
+  app_data:

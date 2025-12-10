@@ -1,0 +1,10 @@
+{
+  "repo_name": "healthcare-records",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-639",
+  "language": "JavaScript",
+  "framework": "Express",
+  "real_world_domain": "Healthcare EHR",
+  "severity": "Critical",
+  "attack_vector": "API/IDOR"
+}

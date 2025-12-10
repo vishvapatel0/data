@@ -1,0 +1,10 @@
+{
+  "repo_name": "rideshare-api",
+  "example_type": "secure",
+  "cwe_id": "N/A",
+  "language": "TypeScript",
+  "framework": "NestJS",
+  "real_world_domain": "Ride-sharing",
+  "severity": "N/A",
+  "attack_vector": "N/A"
+}

@@ -1,0 +1,10 @@
+{
+  "repo_name": "cloud-storage",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-639",
+  "language": "Go",
+  "framework": "Gin",
+  "real_world_domain": "Cloud Storage",
+  "severity": "High",
+  "attack_vector": "API/IDOR"
+}

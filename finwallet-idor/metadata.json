@@ -1,0 +1,10 @@
+{
+  "repo_name": "finwallet-idor",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-639",
+  "language": "Python",
+  "framework": "FastAPI",
+  "real_world_domain": "Fintech wallet",
+  "severity": "High",
+  "attack_vector": "API/IDOR"
+}

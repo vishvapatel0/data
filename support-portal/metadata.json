@@ -1,0 +1,10 @@
+{
+  "repo_name": "support-portal",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-266",
+  "language": "Go",
+  "framework": "Gin",
+  "real_world_domain": "Support ticket management",
+  "severity": "High",
+  "attack_vector": "API/Incorrect Privilege Management"
+}
