@@ -1,0 +1,10 @@
+{
+  "repo_name": "iot-dashboard",
+  "example_type": "secure",
+  "cwe_id": "N/A",
+  "language": "JavaScript",
+  "framework": "Express",
+  "real_world_domain": "IoT/Smart Home",
+  "severity": "N/A",
+  "attack_vector": "N/A"
+}
