@@ -52,7 +52,6 @@ function seedDatabase() {
 
   for (const user of users) {
     const hashedPassword = bcrypt.hashSync(user.password, 10);
-    const result = insertUser.run(hashedPassword, user.full_name, user.role, user.email);
     insertUser.run(user.email, hashedPassword, user.full_name, user.role);
   }
 
