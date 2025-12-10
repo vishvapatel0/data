@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'hr-portal/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'hr-portal/**'
+
+jobs:
+  test-vulnerable:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hr-portal/vulnerable
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build and test
+        run: mvn clean test
+
+  test-fixed:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: hr-portal/fixed
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Build and test
+        run: mvn clean test
