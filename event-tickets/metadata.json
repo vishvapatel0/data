@@ -1,0 +1,10 @@
+{
+  "repo_name": "event-tickets",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-639",
+  "language": "PHP",
+  "framework": "Laravel",
+  "real_world_domain": "Event Ticketing",
+  "severity": "High",
+  "attack_vector": "API/IDOR"
+}
