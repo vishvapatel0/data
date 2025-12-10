@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  vulnerable:
+    build:
+      context: ./vulnerable
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./finwallet.db
+      - SECRET_KEY=demo-secret-key-not-for-production
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    volumes:
+      - vulnerable_data:/app/data
+
+  fixed:
+    build:
+      context: ./fixed
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./finwallet.db
+      - SECRET_KEY=demo-secret-key-not-for-production
+      - ALGORITHM=HS256
+      - ACCESS_TOKEN_EXPIRE_MINUTES=30
+    volumes:
+      - fixed_data:/app/data
+
+volumes:
+  vulnerable_data:
+  fixed_data:
