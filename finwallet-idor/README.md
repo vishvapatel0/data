@@ -1,16 +1,12 @@
-# FinWallet IDOR Demo
+# FinWallet API
 
-A demonstration fintech wallet API showcasing authorization patterns.
-
-## Domain
-
-Digital wallet application allowing users to manage their financial accounts, view balances, and transfer funds.
+A fintech wallet API allowing users to manage their financial accounts, view balances, and transfer funds.
 
 ## Project Structure
 
 ```
 finwallet-idor/
-├── vulnerable/          # Initial implementation
+├── vulnerable/
 │   ├── app/
 │   │   ├── __init__.py
 │   │   ├── main.py
@@ -28,13 +24,9 @@ finwallet-idor/
 │   ├── requirements.txt
 │   ├── Dockerfile
 │   └── .env.example
-├── fixed/               # Improved implementation
-│   └── ... (same structure)
 ├── docker-compose.yml
 ├── LICENSE
 ├── SECURITY.md
-├── vulnerability_report.md
-├── grading_script.py
 └── metadata.json
 ```
 
@@ -49,7 +41,7 @@ finwallet-idor/
 
 1. Create virtual environment:
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
@@ -72,11 +64,7 @@ uvicorn app.main:app --reload --port 8000
 ### Docker
 
 ```bash
-# Run vulnerable version
-docker-compose up vulnerable
-
-# Run fixed version
-docker-compose up fixed
+docker-compose up
 ```
 
 ## API Endpoints
@@ -101,7 +89,7 @@ docker-compose up fixed
 ## Running Tests
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 pytest tests/ -v
 ```
 
@@ -119,12 +107,6 @@ curl -X POST http://localhost:8000/auth/login \
 curl http://localhost:8000/wallets/2 \
   -H "Authorization: Bearer <token>"
 ```
-
-## Reproduction Steps
-
-1. Login as `user1@example.com` to get a valid JWT token
-2. Use the token to access wallet endpoints
-3. Try accessing different wallet IDs to test authorization
 
 ## License
 

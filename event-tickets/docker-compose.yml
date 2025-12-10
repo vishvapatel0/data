@@ -1,22 +1,12 @@
 version: '3.8'
 
 services:
-  vulnerable:
+  app:
     build:
       context: ./vulnerable
       dockerfile: Dockerfile
     ports:
-      - "8085:8000"
-    environment:
-      - APP_KEY=base64:your-app-key-here
-      - JWT_SECRET=demo-secret-key-not-for-production
-
-  fixed:
-    build:
-      context: ./fixed
-      dockerfile: Dockerfile
-    ports:
-      - "8086:8000"
+      - "8000:8000"
     environment:
       - APP_KEY=base64:your-app-key-here
       - JWT_SECRET=demo-secret-key-not-for-production

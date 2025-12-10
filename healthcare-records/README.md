@@ -1,10 +1,6 @@
 # Healthcare Records API
 
-A healthcare patient records management system demonstrating authorization patterns.
-
-## Domain
-
-Electronic Health Records (EHR) system allowing healthcare providers and patients to access medical records.
+An Electronic Health Records (EHR) system allowing healthcare providers and patients to access medical records.
 
 ## Project Structure
 
@@ -25,13 +21,9 @@ healthcare-records/
 │   ├── package.json
 │   ├── Dockerfile
 │   └── .env.example
-├── fixed/
-│   └── ... (same structure)
 ├── docker-compose.yml
 ├── LICENSE
 ├── SECURITY.md
-├── vulnerability_report.md
-├── grading_script.js
 └── metadata.json
 ```
 
@@ -46,7 +38,7 @@ healthcare-records/
 
 1. Navigate to project directory:
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 ```
 
 2. Install dependencies:
@@ -69,11 +61,7 @@ The API will be available at `http://localhost:3000`
 ### Docker
 
 ```bash
-# Run vulnerable version
-docker-compose up vulnerable
-
-# Run fixed version  
-docker-compose up fixed
+docker-compose up
 ```
 
 ## API Endpoints
@@ -98,7 +86,7 @@ docker-compose up fixed
 ## Running Tests
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 npm test
 ```
 

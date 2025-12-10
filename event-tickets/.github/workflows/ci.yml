@@ -11,32 +11,11 @@ on:
       - 'event-tickets/**'
 
 jobs:
-  test-vulnerable:
+  test:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: event-tickets/vulnerable
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          extensions: sqlite3, pdo_sqlite
-
-      - name: Install dependencies
-        run: composer install --no-interaction
-
-      - name: Run tests
-        run: composer test || true
-
-  test-fixed:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: event-tickets/fixed
 
     steps:
       - uses: actions/checkout@v4

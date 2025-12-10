@@ -1,10 +1,6 @@
 # Event Tickets API
 
-An event ticketing system demonstrating authorization patterns.
-
-## Domain
-
-Event ticketing platform allowing users to purchase, view, and transfer tickets for events.
+An event ticketing platform allowing users to purchase, view, and transfer tickets for events.
 
 ## Project Structure
 
@@ -23,13 +19,9 @@ event-tickets/
 │   ├── tests/
 │   ├── composer.json
 │   └── Dockerfile
-├── fixed/
-│   └── ... (same structure)
 ├── docker-compose.yml
 ├── LICENSE
 ├── SECURITY.md
-├── vulnerability_report.md
-├── grading_script.sh
 └── metadata.json
 ```
 
@@ -44,7 +36,7 @@ event-tickets/
 ### Local Development
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -57,8 +49,7 @@ The API will be available at `http://localhost:8000`
 ### Docker
 
 ```bash
-docker-compose up vulnerable
-docker-compose up fixed
+docker-compose up
 ```
 
 ## API Endpoints
@@ -82,7 +73,7 @@ docker-compose up fixed
 ## Running Tests
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 php artisan test
 ```
 

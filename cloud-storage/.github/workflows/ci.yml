@@ -11,31 +11,11 @@ on:
       - 'cloud-storage/**'
 
 jobs:
-  test-vulnerable:
+  test:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: cloud-storage/vulnerable
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-
-      - name: Install dependencies
-        run: go mod download
-
-      - name: Run tests
-        run: go test ./... -v
-
-  test-fixed:
-    runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: cloud-storage/fixed
 
     steps:
       - uses: actions/checkout@v4

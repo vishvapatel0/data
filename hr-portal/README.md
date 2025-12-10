@@ -1,10 +1,6 @@
 # HR Portal API
 
-A human resources employee management system demonstrating authorization patterns.
-
-## Domain
-
-HR management system allowing employees to view their own information and managers to access team data.
+A human resources employee management system allowing employees to view their own information and managers to access team data.
 
 ## Project Structure
 
@@ -23,13 +19,9 @@ hr-portal/
 │   ├── src/test/java/
 │   ├── pom.xml
 │   └── Dockerfile
-├── fixed/
-│   └── ... (same structure)
 ├── docker-compose.yml
 ├── LICENSE
 ├── SECURITY.md
-├── vulnerability_report.md
-├── grading_script.sh
 └── metadata.json
 ```
 
@@ -44,7 +36,7 @@ hr-portal/
 ### Local Development
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 mvn spring-boot:run
 ```
 
@@ -53,8 +45,7 @@ The API will be available at `http://localhost:8080`
 ### Docker
 
 ```bash
-docker-compose up vulnerable
-docker-compose up fixed
+docker-compose up
 ```
 
 ## API Endpoints
@@ -78,7 +69,7 @@ docker-compose up fixed
 ## Running Tests
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 mvn test
 ```
 

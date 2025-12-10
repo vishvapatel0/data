@@ -1,10 +1,6 @@
 # Cloud Storage API
 
-A cloud file storage service demonstrating authorization patterns.
-
-## Domain
-
-Cloud storage service allowing users to upload, download, and manage their files.
+A cloud file storage service allowing users to upload, download, and manage their files.
 
 ## Project Structure
 
@@ -17,13 +13,9 @@ cloud-storage/
 │   ├── models/
 │   ├── go.mod
 │   └── Dockerfile
-├── fixed/
-│   └── ... (same structure)
 ├── docker-compose.yml
 ├── LICENSE
 ├── SECURITY.md
-├── vulnerability_report.md
-├── grading_script.sh
 └── metadata.json
 ```
 
@@ -37,7 +29,7 @@ cloud-storage/
 ### Local Development
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 go mod download
 go run main.go
 ```
@@ -47,8 +39,7 @@ The API will be available at `http://localhost:8080`
 ### Docker
 
 ```bash
-docker-compose up vulnerable
-docker-compose up fixed
+docker-compose up
 ```
 
 ## API Endpoints
@@ -72,7 +63,7 @@ docker-compose up fixed
 ## Running Tests
 
 ```bash
-cd vulnerable  # or fixed
+cd vulnerable
 go test ./... -v
 ```
 
