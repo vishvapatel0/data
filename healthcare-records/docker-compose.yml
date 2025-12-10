@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  vulnerable:
+    build:
+      context: ./vulnerable
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - JWT_SECRET=demo-secret-key-not-for-production
+      - NODE_ENV=production
+    volumes:
+      - vulnerable_data:/app/data
+
+  fixed:
+    build:
+      context: ./fixed
+      dockerfile: Dockerfile
+    ports:
+      - "3002:3000"
+    environment:
+      - JWT_SECRET=demo-secret-key-not-for-production
+      - NODE_ENV=production
+    volumes:
+      - fixed_data:/app/data
+
+volumes:
+  vulnerable_data:
+  fixed_data:
