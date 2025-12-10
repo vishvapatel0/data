@@ -1,0 +1,10 @@
+{
+  "repo_name": "saas-documents",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-863",
+  "language": "TypeScript",
+  "framework": "NestJS",
+  "real_world_domain": "Multi-tenant SaaS document management",
+  "severity": "Critical",
+  "attack_vector": "API/Incorrect Authorization"
+}

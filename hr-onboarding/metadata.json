@@ -1,0 +1,10 @@
+{
+  "repo_name": "hr-onboarding",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-279",
+  "language": "Java",
+  "framework": "Spring Boot",
+  "real_world_domain": "HR/Corporate onboarding",
+  "severity": "High",
+  "attack_vector": "API/Incorrect Privilege Assignment"
+}

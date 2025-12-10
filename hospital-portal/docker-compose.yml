@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - JWT_SECRET=your-secret-key-change-in-production
+      - PORT=3000
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    command: npm run dev

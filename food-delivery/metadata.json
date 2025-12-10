@@ -1,0 +1,10 @@
+{
+  "repo_name": "food-delivery",
+  "example_type": "vulnerable",
+  "cwe_id": "CWE-862",
+  "language": "PHP",
+  "framework": "Laravel",
+  "real_world_domain": "Food delivery platform",
+  "severity": "High",
+  "attack_vector": "API/Missing Authorization"
+}
