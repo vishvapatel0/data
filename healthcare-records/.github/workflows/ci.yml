@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: healthcare-records/vulnerable
+        working-directory: healthcare-records/app
 
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: healthcare-records/vulnerable
+        working-directory: healthcare-records/app
 
     steps:
       - uses: actions/checkout@v4

@@ -6,7 +6,7 @@ A fintech wallet API allowing users to manage their financial accounts, view bal
 
 ```
 finwallet-idor/
-├── vulnerable/
+├── app/
 │   ├── app/
 │   │   ├── __init__.py
 │   │   ├── main.py
@@ -41,7 +41,7 @@ finwallet-idor/
 
 1. Create virtual environment:
 ```bash
-cd vulnerable
+cd app
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
@@ -89,7 +89,7 @@ docker-compose up
 ## Running Tests
 
 ```bash
-cd vulnerable
+cd app
 pytest tests/ -v
 ```
 

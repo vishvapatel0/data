@@ -59,7 +59,7 @@ Each project can be run locally or with Docker:
 
 ```bash
 # Local development
-cd <project>/vulnerable
+cd <project>/app
 # Follow README for language-specific setup
 
 # Docker

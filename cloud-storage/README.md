@@ -6,7 +6,7 @@ A cloud file storage service allowing users to upload, download, and manage thei
 
 ```
 cloud-storage/
-├── vulnerable/
+├── app/
 │   ├── main.go
 │   ├── handlers/
 │   ├── middleware/
@@ -29,7 +29,7 @@ cloud-storage/
 ### Local Development
 
 ```bash
-cd vulnerable
+cd app
 go mod download
 go run main.go
 ```
@@ -63,7 +63,7 @@ docker-compose up
 ## Running Tests
 
 ```bash
-cd vulnerable
+cd app
 go test ./... -v
 ```
 

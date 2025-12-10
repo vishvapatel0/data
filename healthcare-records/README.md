@@ -6,7 +6,7 @@ An Electronic Health Records (EHR) system allowing healthcare providers and pati
 
 ```
 healthcare-records/
-├── vulnerable/
+├── app/
 │   ├── src/
 │   │   ├── index.js
 │   │   ├── routes/
@@ -38,7 +38,7 @@ healthcare-records/
 
 1. Navigate to project directory:
 ```bash
-cd vulnerable
+cd app
 ```
 
 2. Install dependencies:
@@ -86,7 +86,7 @@ docker-compose up
 ## Running Tests
 
 ```bash
-cd vulnerable
+cd app
 npm test
 ```
 

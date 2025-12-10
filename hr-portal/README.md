@@ -6,7 +6,7 @@ A human resources employee management system allowing employees to view their ow
 
 ```
 hr-portal/
-├── vulnerable/
+├── app/
 │   ├── src/main/java/com/demo/hrportal/
 │   │   ├── HrPortalApplication.java
 │   │   ├── controller/
@@ -36,7 +36,7 @@ hr-portal/
 ### Local Development
 
 ```bash
-cd vulnerable
+cd app
 mvn spring-boot:run
 ```
 
@@ -69,7 +69,7 @@ docker-compose up
 ## Running Tests
 
 ```bash
-cd vulnerable
+cd app
 mvn test
 ```
 

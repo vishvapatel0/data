@@ -6,7 +6,7 @@ An event ticketing platform allowing users to purchase, view, and transfer ticke
 
 ```
 event-tickets/
-├── vulnerable/
+├── app/
 │   ├── app/
 │   │   ├── Http/
 │   │   │   ├── Controllers/
@@ -36,7 +36,7 @@ event-tickets/
 ### Local Development
 
 ```bash
-cd vulnerable
+cd app
 composer install
 cp .env.example .env
 php artisan key:generate
@@ -73,7 +73,7 @@ docker-compose up
 ## Running Tests
 
 ```bash
-cd vulnerable
+cd app
 php artisan test
 ```
 
